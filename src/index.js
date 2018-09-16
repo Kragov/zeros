@@ -1,3 +1,9 @@
 module.exports = function getZerosCount(number) {
-  // your implementation
+  let multipliedFive = 5;
+  let quantity = 0;
+  while (multipliedFive < number) {
+      quantity += Math.trunc(number / multipliedFive);
+      multipliedFive *= 5;
+  }
+  return quantity;
 }
